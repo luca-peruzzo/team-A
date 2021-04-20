@@ -96,6 +96,26 @@ h1, h2, h3, h4, h5, h6, p, a {
     word-wrap: break-word;
 }
 
+.d-flex {
+    display: flex;
+}
+
+.flex-dir-column {
+    flex-direction: column;
+}
+
+.flex-align-center {
+    align-content: center;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-justify-between {
+    justify-content: space-between;
+}
+
 /* Global style */
 html {
     --header-height: 120px; /*Modificare con altezza header*/
