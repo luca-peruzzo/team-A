@@ -149,6 +149,18 @@ nav {
     list-style: none;
 }
 
+.menu a {
+    display: block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: .3s;
+}
+
+.menu a:hover {
+    color: #D80808;
+}
+
 .current-menu-item {
     color: #D80808;
 }
@@ -159,6 +171,21 @@ nav {
     font-size: 14px;
     position: relative;
     margin-top: 10px;
+    color: #fff;
+}
+
+/*button*/
+.button inverse {
+    display: inline-block;
+    background: #D80808;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.inverse:hover {
+    background: #000;
     color: #fff;
 }
 
