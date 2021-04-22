@@ -159,6 +159,23 @@ h1, h2, h3, h4, h5, h6, p, a {
     letter-spacing: 1px;
 }
 
+.blog h3 {
+    font-size: 17px;
+    color: #222;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+}
+
+.blog p {
+    font-size: 14px;
+    color: #787878;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
 /** Homepage **/
 .main h1 {
     padding-top: 30vh;
@@ -279,7 +296,7 @@ a#logo > img {
     color: #D80808;
 }
 
-.menu .current-menu-item {
+.current-menu-item {
     color: #D80808;
 }
 
@@ -289,6 +306,10 @@ a#logo > img {
     font-size: 14px;
     position: relative;
     color: #fff;
+}
+
+.blog {
+    margin-top: 100px;
 }
 .footer{
     width: 100%;
@@ -371,29 +392,17 @@ a#logo > img {
 /*button*/
 .button {
     display: inline-block;
-    padding: 20px 40px;
-    margin: 0 20px;
-    border-radius: 10px;
     background: #D80808;
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
     transition: .3s;
-    text-align: center;
 }
 
-.button.inverse {
+.inverse:hover {
     background: #000;
+    color: #fff;
 }
-
-.button:hover {
-    background: #000;
-}
-
-.button.inverse:hover {
-    background: #D80808;
-}
-
 
 /*Homepage*/
 .main {
@@ -413,8 +422,8 @@ a#logo > img {
     text-transform: uppercase;
 }
 
-.main p {
-    margin: 30px 0 50px;
+.main h2 {
+    margin-top: 30px;
     color: #fff;
     font-size: 30px;
     font-weight: 300;
@@ -455,8 +464,6 @@ a#go-top > i {
         margin: 0 2%;
         width: 96%;
     }
-
-
 }
 
 /** iPad Portrait, smartphone **/
@@ -466,16 +473,13 @@ a#go-top > i {
         float: none;
         width: 100%;
     }
-    .main h1 {
-        font-size: 40px;
-        letter-spacing: 0;
-        line-height: 40px;
+    .row {
+        display: block;
     }
-    .button-container {
-        flex-direction: column;
-    }
-    .button-container .button {
-        margin: 15px 0;
+    .column {
+        width: 100%;
+        display: block;
+        min-height: 350px;
     }
 }
 
