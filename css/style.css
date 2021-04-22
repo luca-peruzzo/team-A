@@ -118,25 +118,15 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 /* Global style */
 
-/** Typography **/
-h2,
-h3 {
-    color: #222222;
-    font-size: 30px;
-    font-weight: 300;
-}
-h3 {
-    text-transform: uppercase;
+/** Typography Carlo**/
+.content h3 {
+    color: #222;
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 20px;
 }
-h4 {
-    font-size: 17px;
-    font-weight: 300;
-    color: #787878;
-}
-p {
+
+.content p {
     font-size: 14px;
     color: #787878;
     font-weight: 300;
@@ -144,6 +134,7 @@ p {
     line-height: 24px;
     letter-spacing: 1px;
 }
+
 /** Homepage **/
 .main h1 {
     padding-top: 30vh;
@@ -165,8 +156,8 @@ p {
     margin-top: 50px;
 }
 .inner .fa {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    margin-bottom: 30px;
     color: #222222;
 }
 
