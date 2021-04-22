@@ -372,6 +372,10 @@ a#logo > img {
     width: 60px;
     height: 60px;
     display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 20px;
 }
 .icon a{
     text-decoration: none;
@@ -515,6 +519,10 @@ a#go-top > i {
     }
     .button-container .button {
         margin: 15px 0;
+    }
+    .footer .inner{
+        padding-right: 0;
+        margin-bottom: 50px;
     }
 }
 
