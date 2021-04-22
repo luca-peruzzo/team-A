@@ -1,3 +1,9 @@
+window.onresize = () => {
+    checkOnResize();
+}
+window.onload = () => {
+    checkOnResize();
+}
 const links = document.querySelectorAll("a");
 
 for (const link of links) {
@@ -16,4 +22,16 @@ function clickHandler(e) {
         top: offsetTop,
         behavior: "smooth"
     });
+}
+
+checkOnResize = () => {
+    if (window.outerWidth < 1025 && document.querySelector('.burger-menu').classList.contains('hidden')) {
+        document.querySelector('.burger-menu').classList.remove('hidden');
+        document.querySelector('nav').classList.add('hidden');
+    } else if (window.outerWidth >= 1025 && !document.querySelector('.burger-menu').classList.contains('hidden')) {
+        document.querySelector('.burger-menu').classList.add('hidden');
+        document.querySelector('nav.hidden').classList.remove('hidden');
+    }
+}
+toggleMenu = () => {
 }
