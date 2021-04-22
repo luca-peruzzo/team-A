@@ -399,7 +399,11 @@ a#logo > img {
     transition: .3s;
 }
 
-.inverse:hover {
+.menu .button {
+    border-radius: 0;
+}
+
+.button.inverse {
     background: #000;
     color: #fff;
 }
