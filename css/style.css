@@ -193,14 +193,27 @@ p {
 .grey {
     background-color: #f2f5f8;
 }
-.text {
-    padding: 10%;
+.text-1 {
+    padding: 15%;
+}
+.text-2 {
+    padding: 15%;
 }
 .mid-button {
-    background: transparent;
-    border-color: 1px solid #222;
-    padding: 10px 20px;
-    transition: 0.3ms;
+    display: inline-block;
+    background-color: transparent;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    color: #222222;
+    border: 2px solid #222;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.mid-button:hover {
+    background-color: #d80808;
+    border-color: #d80808;
+    color: white;
 }
 
 .header {
