@@ -117,7 +117,9 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 /* Global style */
-
+.hidden {
+    display: none !important;
+}
 /** Typography Carlo**/
 .content h3 {
     color: #222;
@@ -273,15 +275,43 @@ h1, h2, h3, h4, h5, h6, p, a {
     background: rgba(0, 0, 0, 0.5);
 }
 
+.header.expanded {
+    height: 300px;
+}
 nav {
-    width: 100%;
-    padding: 0 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+}
+.burger-menu {
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    padding: 20px 0;
+}
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
 }
 
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-10px, 5px);
+    transform: rotate(-45deg) translate(-10px, 5px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-9px, -5px);
+    transform: rotate(45deg) translate(-9px, -5px);
+}
 a#logo {
     float: left;
     height: 107px;
@@ -323,7 +353,9 @@ a#logo img {
     position: relative;
     color: #fff;
 }
-
+.menu .button{
+    margin: 0;
+}
 .blog {
     margin-top: 50px;
 }
@@ -500,7 +532,19 @@ a#go-top > i {
         margin: 0 2%;
         width: 96%;
     }
+    nav {
+        width: 100%;
+    }
 
+    .menu {
+        list-style: none;
+    }
+
+    .menu li {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
 
 }
 
