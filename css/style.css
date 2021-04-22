@@ -252,7 +252,6 @@ a#logo > img {
     text-transform: uppercase;
     font-size: 14px;
     position: relative;
-    margin-top: 10px;
     color: #fff;
 }
 
@@ -262,7 +261,6 @@ a#logo > img {
     background: #D80808;
     text-transform: uppercase;
     color: #ffffff;
-    margin-top: 20px;
     text-decoration: none;
     transition: .3s;
 }
