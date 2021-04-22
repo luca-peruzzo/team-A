@@ -196,6 +196,12 @@ p {
 .text {
     padding: 10%;
 }
+.mid-button {
+    background: transparent;
+    border-color: 1px solid #222;
+    padding: 10px 20px;
+    transition: 0.3ms;
+}
 
 .header {
     position: fixed;
