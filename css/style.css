@@ -301,9 +301,10 @@ a#logo > img {
     padding-right: 5%;
 }
 .footer p{
-    font-size: 13px;
+    font-size: 12px;
     color: #777;
     margin-bottom: 0;
+    line-height: 30px;
 }
 
 .footer .inner .fa{
@@ -315,10 +316,9 @@ a#logo > img {
     text-transform: uppercase;
     padding:  10px 0;
     color: white;
+    font-size: 13px;
 }
-.footer p{
-    line-height: 30px;
-}
+
 .footer p a{
     text-decoration: none;
     color: #777;
@@ -327,6 +327,16 @@ a#logo > img {
 .footer p a:hover{
     color: white;
 
+}
+.footer time{
+    color: #777777;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.footer img{
+    width: 60px;
+    height: 60px;
+    display: block;
 }
 .icon a{
     text-decoration: none;
