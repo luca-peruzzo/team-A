@@ -140,7 +140,7 @@ a#logo {
 nav {
     width: 100%;
     padding: 0 60px;
-    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5));
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
     display: flex;
     justify-content: space-between;
 }
@@ -160,6 +160,25 @@ nav {
     position: relative;
     margin-top: 10px;
     color: #fff;
+}
+
+
+/* Go to the top button */
+a#go-top {
+    text-decoration: none;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    background-color: #D80808;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+a#go-top > i {
+    margin: auto auto;
+    color: #fff;
+    padding-bottom: 2px;
 }
 
 /** Desktop, iPad Pro **/
