@@ -160,21 +160,31 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .blog h3 {
-    font-size: 17px;
+    font-size: 15px;
     color: #222;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 1px;
     margin-top: 25px;
+    text-decoration: none;
 }
 
 .blog p {
-    font-size: 14px;
+    font-size: 12px;
     color: #787878;
     font-weight: 300;
     line-height: 24px;
     letter-spacing: 1px;
+    text-decoration: none;
 }
+
+.blog h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
 
 /** Homepage **/
 .main h1 {
@@ -249,6 +259,10 @@ h1, h2, h3, h4, h5, h6, p, a {
     color: white;
 }
 
+.blog .col-3{
+    padding: 20px;
+}
+
 .header {
     position: fixed;
     width: 100%;
@@ -309,7 +323,7 @@ a#logo > img {
 }
 
 .blog {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .footer{
     width: 100%;
