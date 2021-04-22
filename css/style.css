@@ -118,6 +118,83 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 /* Global style */
 
+/** Typography **/
+h2,
+h3 {
+    color: #222222;
+    font-size: 30px;
+    font-weight: 300;
+}
+h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+h4 {
+    font-size: 17px;
+    font-weight: 300;
+    color: #787878;
+}
+p {
+    font-size: 14px;
+    color: #787878;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+/** Homepage **/
+.main h1 {
+    padding-top: 30vh;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 52px;
+    text-transform: capitalize;
+}
+.main h2 {
+    margin-bottom: 30px;
+    color: white;
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+.inner {
+    box-sizing: border-box;
+    padding: 0 10%;
+}
+.inner .fa {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #222222;
+}
+
+/** Display table **/
+.row {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+.column {
+    width: 50%;
+    overflow: hidden;
+    display: table-cell;
+    vertical-align: middle;
+}
+.bg-column {
+    background: url("../img/team-1.jpg") no-repeat center center scroll;
+    background-size: cover;
+}
+.bg-column-2 {
+    background: url("../img/team-2.jpg") no-repeat center center scroll;
+    background-size: cover;
+}
+.grey {
+    background-color: #f2f5f8;
+}
+.text {
+    padding: 10%;
+}
 
 .header {
     position: fixed;
