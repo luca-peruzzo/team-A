@@ -288,9 +288,11 @@ a#logo {
     width: 244px;
 }
 
-a#logo > img {
-    width: 100%;
+a#logo img {
+    /*width: 100%;*/
+    width: 130px;
     height: auto;
+    padding: 25px 0;
 }
 
 
