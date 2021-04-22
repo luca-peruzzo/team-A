@@ -162,6 +162,7 @@ p {
 .inner {
     box-sizing: border-box;
     padding: 0 10%;
+    margin-top: 50px;
 }
 .inner .fa {
     font-size: 36px;
