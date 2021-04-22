@@ -198,7 +198,7 @@ p {
 }
 .mid-button {
     background: transparent;
-    border-color: 1px solid #222;
+    border: 1px solid #222;
     padding: 10px 20px;
     transition: 0.3ms;
 }
@@ -261,7 +261,74 @@ a#logo > img {
     position: relative;
     color: #fff;
 }
+.footer{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #2b2e31;
 
+}
+.footer .inner{
+    padding-left: 0;
+    padding-right: 5%;
+}
+.footer p{
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 0;
+}
+
+.footer .inner .fa{
+    font-size: 15px;
+    width: 20px;
+    color: #777;
+}
+.footer h4{
+    text-transform: uppercase;
+    padding:  10px 0;
+    color: white;
+}
+.footer p{
+    line-height: 30px;
+}
+.footer p a{
+    text-decoration: none;
+    color: #777;
+    transition: 0.3s;
+}
+.footer p a:hover{
+    color: white;
+
+}
+.icon a{
+    text-decoration: none;
+    color: #777777;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+    float: left;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: #222222;
+    transition: 0.3s;
+}
+.credits{
+    width: 100%;
+    background-color: #222222;
+    padding: 15px 0;
+}
+.credits h5{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+.credits p{
+    margin-bottom: 0;
+    font-size: 11px;
+    color: #777777;
+    margin-left: 20px;
+}
 /*button*/
 .button {
     display: inline-block;
