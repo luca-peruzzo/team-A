@@ -254,7 +254,7 @@ a#logo > img {
     color: #D80808;
 }
 
-.current-menu-item {
+.menu .current-menu-item {
     color: #D80808;
 }
 
@@ -336,17 +336,29 @@ a#logo > img {
 /*button*/
 .button {
     display: inline-block;
+    padding: 20px 40px;
+    margin: 0 20px;
+    border-radius: 10px;
     background: #D80808;
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
     transition: .3s;
+    text-align: center;
 }
 
-.inverse:hover {
+.button.inverse {
     background: #000;
-    color: #fff;
 }
+
+.button:hover {
+    background: #000;
+}
+
+.button.inverse:hover {
+    background: #D80808;
+}
+
 
 /*Homepage*/
 .main {
@@ -366,8 +378,8 @@ a#logo > img {
     text-transform: uppercase;
 }
 
-.main h2 {
-    margin-top: 30px;
+.main p {
+    margin: 30px 0 50px;
     color: #fff;
     font-size: 30px;
     font-weight: 300;
@@ -408,6 +420,8 @@ a#go-top > i {
         margin: 0 2%;
         width: 96%;
     }
+
+
 }
 
 /** iPad Portrait, smartphone **/
@@ -416,6 +430,17 @@ a#go-top > i {
     .col-1, .col-2, .col-3, .col-4, .col-6, .col-8, .col-10 {
         float: none;
         width: 100%;
+    }
+    .main h1 {
+        font-size: 40px;
+        letter-spacing: 0;
+        line-height: 40px;
+    }
+    .button-container {
+        flex-direction: column;
+    }
+    .button-container .button {
+        margin: 15px 0;
     }
 }
 
