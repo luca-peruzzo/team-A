@@ -120,150 +120,80 @@ h1, h2, h3, h4, h5, h6, p, a {
 .hidden {
     display: none !important;
 }
-/** Typography Carlo**/
-.content h3 {
-    color: #222;
-    font-size: 15px;
-    font-weight: 400;
-    margin-bottom: 20px;
-}
 
-.content p {
-    font-size: 14px;
-    color: #787878;
+/* Typography */
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 80px;
     font-weight: 300;
-    margin-bottom: 20px;
-    line-height: 24px;
-    letter-spacing: 1px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
 }
 
-.row h2 {
+h2 {
     color: #222;
     font-size: 42px;
     font-weight: 300;
     margin-bottom: 25px;
 }
 
-.row h4 {
-    font-size: 18px;
-    color: #787878;
-    font-weight: 300;
-    margin-bottom: 25px;
-    line-height: 33px;
-}
-
-.row p {
-    font-size: 14px;
-    color: #787878;
-    font-weight: 300;
-    margin-bottom: 40px;
-    line-height: 24px;
-    letter-spacing: 1px;
-}
-
-.blog h3 {
-    font-size: 15px;
+h3 {
+    font-size: 16px;
     color: #222;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 1px;
-    margin-top: 25px;
-    text-decoration: none;
+    margin: 25px 0;
 }
 
-.blog p {
-    font-size: 12px;
+h4 {
+    font-size: 18px;
     color: #787878;
     font-weight: 300;
+    margin-bottom: 24px;
+    line-height: 33px;
+}
+
+p {
+    font-size: 14px;
+    color: #787878;
+    font-weight: 300;
+    margin-bottom: 20px;
     line-height: 24px;
     letter-spacing: 1px;
-    text-decoration: none;
 }
 
-.blog h2 {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 400;
-    margin-bottom: 25px;
-}
-
-
-/** Homepage **/
-.main h1 {
-    padding-top: 30vh;
-    margin-bottom: 20px;
-    color: #fff;
-    font-size: 52px;
-    text-transform: capitalize;
-}
-.main h2 {
-    margin-bottom: 30px;
-    color: white;
-    font-size: 32px;
-    text-transform: capitalize;
-}
-
-.inner {
-    box-sizing: border-box;
-    padding: 0 10%;
-    margin-top: 50px;
-}
-.inner .fa {
-    font-size: 30px;
-    margin-bottom: 30px;
-    color: #222222;
-}
-
-/** Display table **/
-.row {
-    width: 100%;
-    display: table;
-    table-layout: fixed;
-}
-.column {
-    width: 50%;
-    overflow: hidden;
-    display: table-cell;
-    vertical-align: middle;
-}
-.bg-column {
-    background: url("../img/team-1.jpg") no-repeat center center scroll;
-    background-size: cover;
-}
-.bg-column-2 {
-    background: url("../img/team-2.jpg") no-repeat center center scroll;
-    background-size: cover;
-}
-.grey {
-    background-color: #f2f5f8;
-}
-.text-1 {
-    padding: 15%;
-}
-.text-2 {
-    padding: 15%;
-}
-.mid-button {
-    background: transparent;
-    border: 2px solid #222;
+/*button*/
+.button {
+    display: inline-block;
+    padding: 20px 40px;
+    margin: 0 20px;
+    border-radius: 10px;
+    background: #D80808;
     text-transform: uppercase;
+    color: #ffffff;
     text-decoration: none;
-    font-size: small;
-    font-weight: 600;
-    color: #222222;
-    padding: 14px 24px;
-    transition: 0.3s;
+    transition: .3s;
+    text-align: center;
 }
 
-.mid-button:hover {
-    background-color: #d80808;
-    border-color: #d80808;
-    color: white;
+.button.inverse {
+    background: #000;
 }
 
-.blog .col-3{
-    padding: 20px;
+.button:hover {
+    background: #000;
 }
+
+.button.inverse:hover {
+    background: #D80808;
+}
+
+/* end button */
+
+/** header **/
 
 .header {
     position: fixed;
@@ -278,17 +208,28 @@ h1, h2, h3, h4, h5, h6, p, a {
 .header.expanded {
     height: 300px;
 }
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.expand-mobile-only {
+    height: 120px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .burger-menu {
     display: inline-block;
     cursor: pointer;
     float: right;
     padding: 20px 0;
 }
+
 .bar1,
 .bar2,
 .bar3 {
@@ -312,6 +253,7 @@ nav {
     -webkit-transform: rotate(45deg) translate(-9px, -5px);
     transform: rotate(45deg) translate(-9px, -5px);
 }
+
 a#logo {
     float: left;
     height: 107px;
@@ -325,7 +267,6 @@ a#logo img {
     padding: 25px 0;
 }
 
-
 .menu {
     list-style: none;
 }
@@ -336,6 +277,10 @@ a#logo img {
     text-decoration: none;
     color: #ffffff;
     transition: .3s;
+}
+
+.menu .button {
+    border-radius: 0;
 }
 
 .menu a:hover {
@@ -353,65 +298,212 @@ a#logo img {
     position: relative;
     color: #fff;
 }
-.menu .button{
+
+.menu .button {
     margin: 0;
 }
+
+.main h2 {
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+/* end header */
+
+/* main */
+
+.main {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg") no-repeat center scroll;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.main .content {
+    padding-top: 120px;
+    height: 100%;
+}
+
+.main p {
+    margin: 30px 0 50px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* end main */
+
+/* pages */
+.inner {
+    box-sizing: border-box;
+    padding: 0 10%;
+    margin-top: 50px;
+}
+
+.inner i.fa {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #222222;
+}
+
+/* end pages */
+
+/* portfolio */
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 50%;
+    min-height: 655px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.bg-column {
+    background: url("../img/team-1.jpg") no-repeat center center scroll;
+    background-size: cover;
+    order: 1;
+}
+
+.bg-column-2 {
+    background: url("../img/team-2.jpg") no-repeat center center scroll;
+    background-size: cover;
+    order: 3
+}
+
+.grey, .grey-2 {
+    background-color: #f2f5f8;
+    order: 2;
+}
+
+.mid-button {
+    background: transparent;
+    border: 2px solid #222;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: small;
+    font-weight: 600;
+    color: #222222;
+    padding: 14px 24px;
+    transition: 0.3s;
+}
+
+.mid-button:hover {
+    background-color: #d80808;
+    border-color: #d80808;
+    color: white;
+}
+
+/* end portfolio */
+
+/* blog */
+
+
 .blog {
     margin-top: 50px;
 }
-.footer{
+
+.blog p {
+    font-size: 12px;
+}
+
+.blog .col-3 {
+    padding: 20px 0;
+}
+
+.blog .col-3.left {
+    padding-right: 30px;
+}
+
+.blog .col-3.mid-left {
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.blog .col-3.mid-right {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.blog .col-3.right {
+    padding-left: 30px;
+}
+
+/* end blog */
+
+/* footer */
+.footer {
     width: 100%;
     padding: 70px 0;
     background-color: #2b2e31;
 
 }
-.footer .inner{
+
+.footer .inner {
     padding-left: 0;
     padding-right: 5%;
 }
-.footer p{
+
+.footer p {
     font-size: 12px;
     color: #777;
     margin-bottom: 0;
     line-height: 30px;
 }
 
-.footer .inner .fa{
+.footer .inner .fa {
     font-size: 15px;
     width: 20px;
     color: #777;
 }
-.footer h4{
+
+.footer h4 {
     text-transform: uppercase;
-    padding:  10px 0;
+    padding: 10px 0;
     color: white;
     font-size: 13px;
 }
 
-.footer p a{
+.footer p a {
     text-decoration: none;
     color: #777;
     transition: 0.3s;
 }
-.footer p a:hover{
+
+.footer p a:hover {
     color: white;
 
 }
-.footer time{
+
+.footer .pseudo-figure time {
     color: #777777;
     font-size: 12px;
     text-transform: uppercase;
 }
-.footer img{
+
+.footer .pseudo-figure img {
     width: 60px;
     height: 60px;
-    display: block;
+    display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
-    float: left;
     margin-right: 20px;
 }
-.icon a{
+
+.footer .pseudo-figure p {
+    line-height: 24px;
+}
+
+.icon a {
     text-decoration: none;
     color: #777777;
     width: 30px;
@@ -425,85 +517,34 @@ a#logo img {
     background-color: #222222;
     transition: 0.3s;
 }
-.credits{
+
+.credits {
     width: 100%;
     background-color: #222222;
     padding: 15px 0;
 }
-.credits h5{
+
+.credits h4 {
     color: #fff;
     text-align: center;
     text-transform: uppercase;
 }
-.credits p{
+
+.credits p {
     margin-bottom: 0;
     font-size: 11px;
     color: #777777;
     margin-left: 20px;
 }
-/*button*/
-.button {
-    display: inline-block;
-    padding: 20px 40px;
-    margin: 0 20px;
-    border-radius: 10px;
-    background: #D80808;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-decoration: none;
-    transition: .3s;
-    text-align: center;
-}
 
-.menu .button {
-    border-radius: 0;
-}
-
-.button.inverse {
-    background: #000;
-}
-
-.button:hover {
-    background: #000;
-}
-
-.button.inverse:hover {
-    background: #D80808;
-}
-
-
-/*Homepage*/
-.main {
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg") no-repeat center scroll;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-}
-
-.main h1 {
-    padding-top: 25%;
-    text-align: center;
-    color: #ffffff;
-    font-size: 80px;
-    font-weight: 300;
-    letter-spacing: 6px;
-    text-transform: uppercase;
-}
-
-.main p {
-    margin: 30px 0 50px;
-    color: #fff;
-    font-size: 30px;
-    font-weight: 300;
-    text-align: center;
-}
+/* end footer */
 
 /* Go to the top button */
 a#go-top {
     text-decoration: none;
     display: flex;
-    width: 32px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
     background-color: #D80808;
     position: fixed;
     right: 10px;
@@ -532,12 +573,21 @@ a#go-top > i {
         margin: 0 2%;
         width: 96%;
     }
-    nav {
+
+    .expand-mobile-only {
+        align-items: center;
         width: 100%;
     }
 
+    nav {
+        width: calc(104%);
+        margin: 0 -2%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px 2%;
+    }
+
     .menu {
-        list-style: none;
+        width: 100%;
     }
 
     .menu li {
@@ -546,6 +596,17 @@ a#go-top > i {
         margin: 10px 0;
     }
 
+    .row .column {
+        width: 100%;
+    }
+
+    .grey-2 {
+        order: 3;
+    }
+
+    .bg-column-2 {
+        order: 2;
+    }
 }
 
 /** iPad Portrait, smartphone **/
@@ -555,18 +616,29 @@ a#go-top > i {
         float: none;
         width: 100%;
     }
+
     .main h1 {
         font-size: 40px;
         letter-spacing: 0;
         line-height: 40px;
     }
+
     .button-container {
         flex-direction: column;
+        width: 100%;
     }
+
     .button-container .button {
         margin: 15px 0;
+        width: 100%;
     }
-    .footer .inner{
+
+    .blog .col-3 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .footer .inner {
         padding-right: 0;
         margin-bottom: 50px;
     }

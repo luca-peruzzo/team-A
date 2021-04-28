@@ -1,6 +1,7 @@
 window.onresize = () => {
     checkOnResize();
 }
+
 window.onload = () => {
     checkOnResize();
 }
@@ -24,14 +25,17 @@ function clickHandler(e) {
     });
 }
 
+menu = document.querySelector('.burger-menu');
+nav = document.querySelector('nav');
 checkOnResize = () => {
     if (window.outerWidth < 1025 && document.querySelector('.burger-menu').classList.contains('hidden')) {
-        document.querySelector('.burger-menu').classList.remove('hidden');
-        document.querySelector('nav').classList.add('hidden');
+        this.menu.classList.remove('hidden');
+        this.nav.classList.add('hidden');
     } else if (window.outerWidth >= 1025 && !document.querySelector('.burger-menu').classList.contains('hidden')) {
-        document.querySelector('.burger-menu').classList.add('hidden');
-        document.querySelector('nav.hidden').classList.remove('hidden');
+        this.menu.classList.add('hidden');
+        this.nav.classList.remove('hidden');
     }
 }
 toggleMenu = () => {
+    this.nav.classList.toggle('hidden');
 }

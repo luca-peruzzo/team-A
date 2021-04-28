@@ -17,8 +17,8 @@
 <body>
 <header>
     <div class="header">
-        <div class="content d-flex flex-justify-between">
-            <div class="d-flex flex-justify-between" style="flex-wrap: wrap">
+        <div class="content d-flex flex-justify-between wrap">
+            <div class="d-flex flex-justify-between expand-mobile-only">
                 <a href="index.html" id="logo"><img alt="logo" src="img/logo.png"></a>
                 <div class="burger-menu hidden" onclick="toggleMenu()">
                     <div class="bar1"></div>
@@ -26,7 +26,7 @@
                     <div class="bar3"></div>
                 </div>
             </div>
-            <nav>
+            <nav class="hidden">
                 <ul class="menu">
                     <li><a class="current-menu-item" href="#">home</a></li>
                     <li><a href="#">portfolio</a></li>
@@ -43,7 +43,7 @@
 <!--main-->
 <section id="main">
     <div class="main">
-        <div class="content">
+        <div class="content d-flex flex-dir-column flex-justify-center flex-align-center">
             <h1>stunning interiors</h1>
             <p>Simplicity is at the heart of our design, we make <br><br>complex things look and feel simple</p>
             <div class="d-flex flex-justify-center button-container">
@@ -55,7 +55,7 @@
     </div><!--main-->
 </section>
 
-<section>
+<section id="pages">
     <div class="content clearfix">
         <div class="col-3 center divider">
             <div class="inner">
@@ -99,53 +99,56 @@
     </div>
 </section>
 
-<div class="row clearfix">
-    <div class="column bg-column"></div>
+<section id="portfolio">
+    <div class="row">
+        <div class="column bg-column"></div>
 
-    <div class="column grey">
-        <div class="text-1">
-            <h2>About</h2>
-            <h4>Ea mei nostrum
-                imperdiet deterruisset, mei ludus efficiendi ei.</h4>
+        <div class="column grey">
+            <div class="text-1">
+                <h2>About</h2>
+                <h4>Ea mei nostrum
+                    imperdiet deterruisset, mei ludus efficiendi ei.</h4>
 
-            <p>Sea summo mazim ex, ea errem eleifend definitionem vim. Ut nec hinc dolor possim. Ea mei nostrum
-                imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem vim.
-                Ut nec hinc dolor possim. </p>
+                <p>Sea summo mazim ex, ea errem eleifend definitionem vim. Ut nec hinc dolor possim. Ea mei nostrum
+                    imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem
+                    vim.
+                    Ut nec hinc dolor possim. </p>
 
-            <p>Ea mei nostrum
-                imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem
-                vim. Ut nec hinc dolor possim. Ea mei nostrum
-                imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem vim.
-                Ut nec hinc dolor possim.</p>
-            <a class="mid-button" href="#">meet our team</a>
+                <p>Ea mei nostrum
+                    imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem
+                    vim. Ut nec hinc dolor possim. Ea mei nostrum
+                    imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem
+                    vim.
+                    Ut nec hinc dolor possim.</p>
+                <a class="mid-button" href="#">meet our team</a>
+            </div>
         </div>
     </div>
-</div>
+    <div class="row">
+        <div class="column grey-2">
+            <div class="text-2">
+                <h2>A Class Apart</h2>
+                <h4>Ut nec hinc dolor possim. Ea mei nostrum imperdiet deterruisset, mei ludus efficiendi ei.</h4>
 
-<div class="row clearfix">
-    <div class="column grey">
-        <div class="text-2">
-            <h2>A Class Apart</h2>
-            <h4>Ut nec hinc dolor possim. Ea mei nostrum imperdiet deterruisset, mei ludus efficiendi ei.</h4>
-
-            <p>Sea summo mazim ex, ea errem eleifend definitionem vim. Ut nec hinc dolor possim. Mei ludus efficiendi
-                ei. Sea summo mazim ex, ea errem eleifend definitionem vim. Ut nec hinc dolor possim. Ea mei nostrum
-                imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem
-                vim.</p>
-            <a class="mid-button" href="#">buy now</a>
+                <p>Sea summo mazim ex, ea errem eleifend definitionem vim. Ut nec hinc dolor possim. Mei ludus
+                    efficiendi
+                    ei. Sea summo mazim ex, ea errem eleifend definitionem vim. Ut nec hinc dolor possim. Ea mei nostrum
+                    imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem
+                    vim.</p>
+                <a class="mid-button" href="#">buy now</a>
+            </div>
         </div>
+
+        <div class="column bg-column-2"></div>
     </div>
-
-    <div class="column bg-column-2"></div>
-</div>
-
+</section>
 
 <section id="blog">
     <div class="blog">
-        <h2>From The Journal</h2>
         <div class="content">
+            <h2>From The Journal</h2>
             <div class="clearfix">
-                <div class="col-3">
+                <div class="col-3 left">
 
                     <figure class="image-container">
                         <a href="#"><img alt="team 1" src="img/team-1.jpg"></a>
@@ -159,7 +162,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, eligendi ex.</p>
 
                 </div>
-                <div class="col-3">
+                <div class="col-3 mid-left">
 
                     <figure class="image-container">
                         <a href="#"><img alt="team 1" src="img/team-1.jpg"></a>
@@ -173,7 +176,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, eligendi ex.</p>
 
                 </div>
-                <div class="col-3">
+                <div class="col-3 mid-right">
                     <figure class="image-container">
                         <a href="#"><img alt="team 1" src="img/team-1.jpg"></a>
                         <figcaption>
@@ -185,7 +188,7 @@
                     </figure>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, eligendi ex.</p>
                 </div>
-                <div class="col-3">
+                <div class="col-3 right">
 
                     <figure class="image-container">
                         <a href="#"><img alt="team 1" src="img/team-1.jpg"></a>
@@ -203,6 +206,7 @@
         </div>
     </div>
 </section>
+
 <footer>
     <div class="footer">
         <div class="content clearfix">
@@ -230,24 +234,34 @@
             <div class="col-4 inner">
                 <h4>from our blog</h4>
 
-                <p><a href="#"><img alt="" class="responsive" src="img/footer1.jpeg"></a>Oshine A Creative Multipurpose
-                    Wordpress Theme</p>
-                <time>October 10, 2014</time>
+                <div class="d-flex pseudo-figure">
+                    <img alt="footer-1" class="responsive" src="img/footer1.jpeg">
+                    <div class="d-flex flex-dir-column flex-justify-center">
+                        <p>Oshine A Creative Multipurpose Wordpress Theme</p>
+                        <time>October 10, 2014</time>
+                    </div>
+                </div>
 
-                <p><a href="#"><img alt="" class="responsive" src="img/footer2.jpg"></a>If You are Good at Something,
-                    Don't Do It For Free</p>
-                <time>October 10, 2014</time>
-                <p class="divider"></p>
+                <div class="d-flex pseudo-figure">
+                    <img alt="footer-2" class="responsive" src="img/footer2.jpg">
+                    <div class="d-flex flex-dir-column flex-justify-center">
+                        <p>If You are Good at Something, Don't Do It For Free</p>
+                        <time>October 10, 2014</time>
+                    </div>
+                </div>
+                <div class="divider"></div>
             </div><!--col-4 inner-->
 
         </div><!--content clearfix-->
     </div><!--footer-->
     <div class="credits">
-        <h5>oshine</h5>
+        <h4>oshine</h4>
         <p> Copyright Brand Exponent 2014. All Rights Reserved.</p>
     </div><!--credits-->
 </footer>
+
 <a href="#main" id="go-top"><i class="fa fa-angle-up"></i></a>
+
 <script src="js/main.js"></script>
 
 </body>
